@@ -1,0 +1,117 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,170,0.571953781512605) 100%);
+   
+}
+.h1-weather{
+    font-size: 50px;
+    color:#fcde46;
+    font-family:cursive;
+    
+}
+.search{
+    border-radius: 20px;
+    background-image: linear-gradient(135deg,lightgreen,#5b548a);
+    height:50px;
+
+}
+#city-value{
+    width:300px;
+    text-align: center;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color:blue;
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+button{
+    border-radius: 50%;
+    height:32px;
+    width: 40px;
+    margin-right: 5px;
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+#city-value::placeholder{
+    color:white;
+    font-weight: bold;
+    font-family:cursive;
+    color:blue;
+}
+.info{
+   
+    height:400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+    text-align: center;
+    transition: all 0.3s ease; 
+    background-image: linear-gradient(160deg,rgb(11, 241, 11),skyblue,skyblue);
+    display: none;
+    color:white;
+    font-family:cursive;
+    font-weight: bold;
+}
+#wicon{
+    font-size: 90px;
+    padding-top: 20px;
+    
+  }
+  
+
+#temp{
+    margin-bottom:20px ;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 17px;
+    
+}
+li{
+    padding:20px;
+}
+.error{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+    transition: all 0.3s ease; 
+
+}
+@media only screen and (max-width:600px){
+    .search
+    {   margin-left:20px;
+        width:390px;
+        display: flex;
+    }
+    #city-value{
+        margin-right: 10px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    #but{
+        margin-top: 10px; 
+    }
+    #city-value::placeholder{
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    .h1-weather{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .info{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+}
+
